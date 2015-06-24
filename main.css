@@ -432,7 +432,7 @@ th {
 /*===========================================================================*/
 
 .clearfix {
-    overflow: auto;
+    overflow: hidden;
     z-index: 10;
 }
 
@@ -441,16 +441,17 @@ th {
     padding: 20px;
     margin: 0 auto;
 }
+
+.hidden {
+    visibility: hidden;
+}
+
+.grey {
+    color: lightgrey;
+}
 /*===========================================================================*/
                         /* ~~~ Profiles ~~~ */ 
 /*===========================================================================*/
-
-.profile-img {
-    float: left;
-    margin: 10px;
-    border-radius: 10px;
-
-}
 
 .profile-container {
     border: 1px dashed black;
@@ -458,6 +459,16 @@ th {
     margin-bottom: 20px;
 }
 
+/*==============================  image  =============================*/
+        
+.profile-img {
+    float: left;
+    margin: 10px;
+    border-radius: 10px;
+}
+
+/*==============================  content  =============================*/
+        
 .content-container {
     position: relative;
     padding: 10px;
@@ -465,8 +476,14 @@ th {
 
 .bio-content {
     position: relative;
+    width: 100%;
 }
 
+.bio-text {
+    word-wrap: break-word;
+}
+/*=============================  Dynamic Input  =============================*/
+        
 .input {
     position : absolute;
     top : 0;
